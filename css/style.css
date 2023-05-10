@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+}
+
+@font-face{
+    font-family: futuraDemi;
+    src: url(../fonts/FuturaPTDemi.otf)
+}
+@font-face{
+    font-family: futuraMedium;
+    src: url(../fonts/FuturaPTMedium.otf)
+}
+@font-face{
+    font-family: futuraBook;
+    src: url(../fonts/FuturaPTBook.otf)
+}
+@font-face{
+    font-family: futuraBold;
+    src: url(../fonts/FuturaPTBold.otf)
+}
+/* Posiciones */
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+
+/* width */
+.w100{
+    width: 100%;
+}
+.h100{
+    height: 100%;
+}
+
+.w-500{
+    width: 500px;
+}
+.w160px{
+    width: 160px;
+}
+/* Fuentes */
+.futura_book{
+    font-family: futuraBook;
+}
+.futura_medium{
+    font-family: futuraMedium;
+}
+.futura_demi{
+    font-family: futuraDemi;
+}
+.futura_bold{
+    font-family: futuraBold;
+}
+
+h1{
+    font-size: 2.5 rem;
+}
+h2{
+    font-size: 2 rem;
+}
+h3{
+    font-size: 1.5 rem; 
+}
+
+p{
+    color: #002856;
+    font-size: 1rem;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.font-w300{
+    font-weight: 700;
+}
+
+ 
+/* COLORES */
+.text-blue-50{
+    color: #4377FF;
+}
+.text-blue-100{
+    color: #1F49B6;
+}
+.text-blue-900{
+    color: #002856;
+}
+.text-white{
+    color: #fff;
+}
+.text-gray-50{
+    color: #A8A9AC;
+}
+.text-gray-{
+    color: #8D8D8D;
+}
+.fs_16{
+    font-size: 1rem;
+}
+.fs_24{
+    font-size: 1.5rem;
+}
+
+/* background */
+
+.bg-blue-50{
+    background-color: #4377FF;
+}
+.bg-blue-100{
+    background-color: #1F49B6;
+}
+.bg-blue-900{
+    background-color: #002856;
+}
+.bg-white{
+    background-color: #fff;
+}
+.bg-gray-50{
+    background-color: #A8A9AC;
+}
+.bg-gray-{
+    background-color: #8D8D8D;
+}
+.bg-gradient-blue{
+    height: 100%;
+    background-color: #1f49b6a8;
+}
+
+.border-blue-top{
+    border-top: 10px solid #1F49B6;
+}
+.border-blue-left{
+    border-left: 10px solid #1F49B6;
+}
+.hr-white{
+    border: 2px solid #fff;
+    text-align: center;
+}
+.hr-blue{
+    border: 1px  solid #002856;
+    width: 3rem; 
+}
+
+/* header */
+
+.hero{
+    background-image: url(../img/bg/portada.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.float-text{
+    left: -200px;
+    top: -300px;
+}
+.float-text div{
+    width: 200px;
+}
+
+
+/* modificaciones bootstrap */
+.dropdown-toggle::after{
+   visibility: hidden;
+}
