@@ -26,6 +26,11 @@ html {
     font-family: futuraBold;
     src: url(../fonts/FuturaPTBold.otf)
 }
+
+/* padding */
+.p-0{
+    padding: 0;
+}
 /* Posiciones */
 .position-relative{
     position: relative;
@@ -150,6 +155,11 @@ p{
 .hr-white{
     border: 2px solid #fff;
     text-align: center;
+}
+.hr_white_short{
+    border: 1px solid #fff;
+    text-align: center;
+    width: 100px;
 }
 .hr-blue{
     border: 1px  solid #002856;
