@@ -26,6 +26,14 @@ html {
     font-family: futuraBold;
     src: url(../fonts/FuturaPTBold.otf)
 }
+@font-face{
+    font-family: futuraHeavy;
+    src: url(../fonts/FuturaPTHeavy.otf)
+}
+@font-face{
+    font-family: futuraLight;
+    src: url(../fonts/FuturaPTLight.otf)
+}
 
 /* padding */
 .p-0{
@@ -46,7 +54,9 @@ html {
 .h100{
     height: 100%;
 }
-
+.w-32{
+    width: 2rem;
+}
 .w-500{
     width: 500px;
 }
@@ -65,6 +75,12 @@ html {
 }
 .futura_bold{
     font-family: futuraBold;
+}
+.futura_heavy{
+    font-family: futuraHeavy;
+}
+.futura_light{
+    font-family: futuraLight;
 }
 
 h1{
@@ -117,9 +133,41 @@ p{
 .fs_16{
     font-size: 1rem;
 }
+.fs_19{
+    font-size: 1.18rem;
+}
+.fs_20{
+    font-size: 1.25rem;
+}
+.fs_22{
+    font-size: 1.4rem;
+}
 .fs_24{
     font-size: 1.5rem;
 }
+.fs_29{
+    font-size: 1.8rem;
+}
+.fs_30{
+    font-size: 1.9rem;
+}
+.fs_32{
+    font-size: 2rem;
+}
+.fs_40{
+    font-size: 2.5rem;
+}
+.fs_46{
+    font-size: 2.87rem;
+}
+.fs_52{
+    font-size: 3.25rem;
+}
+.fs_64{
+    font-size: 4rem;
+}
+
+
 
 /* background */
 
@@ -145,13 +193,30 @@ p{
     height: 100%;
     background-color: #1f49b6a8;
 }
+.bg-blue-trasparent{
+    height: 100%;
+    background-color: #002856a8;
+}
 
+.bg-indicadores{
+    height: 50vh;
+    background-image: url("../img/bg/indicadores.jpg");
+}
+/* Border */
 .border-blue-top{
     border-top: 10px solid #1F49B6;
 }
 .border-blue-left{
     border-left: 10px solid #1F49B6;
 }
+
+.border-count-left{
+    border-left: 1px solid #fff ;
+}
+.border-count-right{
+    border-right: 1px solid #fff;
+}
+
 .hr-white{
     border: 2px solid #fff;
     text-align: center;
@@ -182,8 +247,23 @@ p{
     width: 200px;
 }
 
+/* indicadores */
 
+.count-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 /* modificaciones bootstrap */
 .dropdown-toggle::after{
    visibility: hidden;
+}
+.footer-bg{
+    background-image: url("../img/bg/footer_web.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+}
+.footer-list{
+    list-style: none;
 }
