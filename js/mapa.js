@@ -1,3 +1,5 @@
+let animdata ={}
+
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('mapa_desarrollo'),
     renderer: 'svg',
