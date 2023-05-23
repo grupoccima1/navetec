@@ -14,6 +14,7 @@
     <meta property="og:title" content="NAVETEC | Mensualidades desde $2,420 y Excelentes descuentos">
     <meta property="og:type" content="Conoce NAVETEC,">
     <meta name="author" content="Grupo CCIMA">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js"
@@ -30,9 +31,9 @@
                 <div class="d-flex w100 justify-content-between">
                     <div class="d-inline-flex">
                         <!-- Dropdown -->
-                        <div class="nav-item dropdown ">
+                        <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle texto-blue" href="#" id="navbardrop" data-toggle="dropdown">
-                                <img id="icon-bars" src="img/iconos/icon_menu.svg" alt="" width="35px">
+                                <img id="icon-bars" class="icon-menu" src="img/iconos/icon_menu.svg" alt="">
                             </a>
                             <div class="dropdown-menu px-3 menu__border box-shadow">
                                 <a class="dropdown-item mb-2" href="#header">Inicio</a>
@@ -40,9 +41,9 @@
                                 <a class="dropdown-item mb-2" href="#testimonios">Testimoniales</a>
                             </div>
                         </div>
-                        <div class="" style="margin-left: 5rem;">
+                        <div class="ml-5rem">
                             <a class="navbar-brand" href="#">
-                                <img src="img/logos/navetec.svg" width="100px">
+                                <img class="logo-navetec" src="img/logos/navetec.svg">
                             </a>
                             <span class="navbar-text futura_demi">
                                 Parques industriales
@@ -52,7 +53,7 @@
 
                     </div>
                     <div class="">
-                        <div class="d-none">
+                        <div class="d-none d-xl-block ">
                             <a href="">
                                 <img width="250px" src="img/content/boton_invertir.svg" alt="">
                             </a>
@@ -72,19 +73,28 @@
         <div class="bg-gradient-blue">
             <div class="container h100">
                 <div class="row h100 align-items-center justify-content-between">
-                    <div class="col-12 col-xl-6">
-                        <div class="d-flex justify-content-center">
-                            <img class="n_logo text-center" src="img/logos/n_logo.svg" alt="" width="200px">
+                    <div class="col-12 col-xl-6 p-0">
+
+                        <div class="text-right">
+                            <div class="d-block d-xl-none ">
+                                <a href="">
+                                    <img class="pb-5" width="250px" src="img/content/boton_invertir.svg" alt="">
+                                </a>
+    
+                            </div>
                         </div>
-                        <hr class="hr-white">
-                        <h1 class="text-white">Terrenos, Micronaves y<br>
+                        <div class="d-flex justify-content-center">
+                            <img class="animate__animated animate__fadeInUp n_logo text-center" src="img/logos/n_logo.svg" alt="" width="200px">
+                        </div>
+                        <hr class="hr-white mx-3">
+                        <h1 class="text-white px-3">Terrenos, Micronaves y<br>
                             <span>Naves Industriales</span>
                         </h1>
-                        <p class="text-white futura_book fs_24 pt-2">Somos tus Aliados en Inversiones<br>
+                        <p class="text-white futura_book fs_24 pt-2 px-3">Somos tus Aliados en Inversiones<br>
                             Inmobiliarias <span class=""> EXTRAORDINARIAS</span></p>
                     </div>
                     <div class="col-5 col-xl-5">
-                        <div class="d-none">
+                        <div class="d-none d-xl-block">
                             <div class="card p-5 border-blue-top box-shadow">
                                 <div id="" class="">
                                     <form action="" method="POST" class="formulario">
@@ -131,6 +141,50 @@
 
 </header>
 
+
+<div class="d-block d-md-none ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <div class="">
+                    <div class="card p-5 border-blue-top box-shadow">
+                        <div id="" class="">
+                            <form action="" method="POST" class="formulario">
+                                <h4 class="text-center">¡COMIENZA A INVERTIR <br> <span class="text-blue-100"> DESDE $1.9M!</span></h4>
+                                <div class="mb-3">
+                                    <!-- <label for="" class="form-label">Nombre Completo</label> -->
+                                    <input type="text" placeholder="Nombre" class="form-control" id="" name="" required>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label for="" class="form-label">E mail</label> -->
+                                    <input type="text" placeholder="Email" class="form-control" id="" name="" required>
+                                </div>
+                                <div class="mb-3">
+                                    <!-- <label for="" class="form-label">Teléfono</label> -->
+                                    <input type="int" placeholder="Teléfono" class="form-control" id="" name="" maxlength="10" required>
+                                </div>
+                                <span class="futura_book text-gray-50">¿Para qué deseas tu nave o terreno?</span>
+                                <div class="mt-2">
+                                    <input type="radio" name="intencion_2" id="negocio">
+                                    <label class="intencion" for="negocio">Mi negocio</label>
+                            
+                                    <input type="radio" name="intencion_2" id="inversion">
+                                    <label class="intencion" for="inversion">Inversion</label>
+                                    
+                                </div>
+                                <div class="d-flex justify-content-center pt-3">
+                                    <button type="submit" id="guardar" value="" class="btn btn-outline-dark text-blue-100 text-uppercase">invertir</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
     <!-- inicio de inversiones en Queretaro -->
     <div class="container my-5">
         <div class="">
@@ -170,11 +224,11 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center gap-3">
                             <div class="col-12 col-xl-4">
                                 <img  class="w100 px-3 "src="img/content/sur_57.jpg" alt="">
                             </div>
-                            <div class="col-12 col-xl-4">
+                            <div class="col-12 col-xl-4 py-3 py-md-0">
                                 <img  class="w100 px-3 "src="img/content/calamanda.jpg" alt="">
                             </div>
                             <div class="col-12 col-xl-4">
@@ -187,7 +241,7 @@
                             <div class="col-12 col-xl-4">
                                 <img class="w100 px-3 " src="img/content/celta.jpg" alt="">
                             </div>
-                            <div class="col-12 col-xl-4">
+                            <div class="col-12 col-xl-4 py-3 py-md-0">
                                 <img  class="w100 px-3 " src="img/content/gamma_ll.jpg" alt="">
                             </div>
                             <div class="col-12 col-xl-4">
@@ -197,10 +251,10 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row justify-content-center">
-                            <div class="col-12 col-xl-4">
+                            <div class="col-12 col-xl-4 ">
                                 <img class="w100 px-3 " src="img/content/gamma_l.jpg" alt="">
                             </div>
-                            <div class="col-12 col-xl-4">
+                            <div class="col-12 col-xl-4 py-3 py-md-0 ">
                                 <img class="w100 px-3 " src="img/content/beta.jpg" alt="">
                             </div>
                             <div class="col-12 col-xl-4">
@@ -385,19 +439,19 @@
                         <hr class="hr-white">
                         <div class="row">
                             <div class="col-12 col-xl-6 p-4">
-                                <img src="img/content/promo1.svg" alt="">
+                                <img class="p-4 p-md-0" src="img/content/promo1.svg" alt="">
                             </div>
     
                             <div class="col-12 col-xl-6 p-4">
-                                <img src="img/content/promo2.svg" alt="">
+                                <img class="p-4 p-md-0" src="img/content/promo2.svg" alt="">
                             </div>
     
                             <div class="col-12 col-xl-6 p-4">
-                                <img src="img/content/promo3.svg" alt="">
+                                <img class="p-4 p-md-0" src="img/content/promo3.svg" alt="">
                             </div>
     
                             <div class="col-12 col-xl-6 p-4">
-                                <img src="img/content/promo4.svg" alt="">
+                                <img class="p-4 p-md-0" src="img/content/promo4.svg" alt="">
                             </div>
     
                         </div>
@@ -423,9 +477,9 @@
     <div class="testimoniales bg-blue-900">
         <div class="container">
             <h2 class="futura_book text-white fs_46 text-center text-uppercase pt-5">nuestros clientes dicen ...</h2>
-            <div class="row justify-content-around py-3">
+            <div class="row justify-content-around py-5">
 
-                <div class="col-12 col-xl-5 text-center text-xl-right  ">
+                <d5v class="col-12 col-xl-5 text-center text-xl-right pt-3  ">
                     <img src="img/iconos/comment.svg" alt="">
                     <p class="futura_book fs_16 interlineado-24 text-white ">Tuve la oportunidad de ir a un recorrido presencial en uno de
                         sus parques y la verdad es que me cautivó desde el principio;
@@ -439,9 +493,9 @@
                         </div>
                         <span class="futura_demi fs_19 text-white ">Carlos Torres Torijo</span> <br>
                         <span class="futura_medium fs_19 text-white ">Empresario</span>
-                </div>
+                </d5v>
 
-                <div class="col-12 col-xl-5 text-center text-xl-right ">
+                <div class="col-12 col-xl-5 text-center text-xl-right pt-3 ">
                     <img src="img/iconos/comment.svg" alt="">
                     <p class="futura_book fs_16 interlineado-24 text-white ">Tuve la oportunidad de ir a un recorrido presencial en uno de
                         sus parques y la verdad es que me cautivó desde el principio;
@@ -502,9 +556,9 @@
     <footer class="footer-bg">
         <div class="container h100">
             <div class="row h100 align-items-center" >
-                <div class="col-9">
-                    <div class="row">
-                        <div class="col-5"> 
+                <div class="col-12 col-xl-9">
+                    <div class="row ptfooter-10">
+                        <div class="col-12 col-xl-5 pl-5"> 
                             <h3 class="futura_demi fs_24">Oficinas Queretaro</h3>
                             <div class="row justify-content-start">
                                 <div class="col-3">
@@ -519,7 +573,7 @@
                             <img class="icon_phone w-32" src="img/iconos/telefono.svg" alt="">
                             <span>(442) 291 22 23</span>
                         </div>
-                        <div class="col-5"> 
+                        <div class="col-12 col-xl-5 pl-5 pt-5"> 
                             <h3 class=" futura_demi fs_24">Oficinas CDMX</h3>
                             <div class="row justify-content-start">
                                 <div class="col-3">
@@ -536,8 +590,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="d-flex">
+                <div class="col-12 col-xl-3 text-right pt-5">
+                    <div class="d-flex justify-content-end">
                         <div class="px-1">
                             <a href="">
                                 <img class="w-32" src="img/iconos/facebook.svg" alt="">
@@ -560,7 +614,7 @@
                         </div>
                     </div>
                     <a href="">
-                        <span class="text-white fs_24">grupoccima.com</span>
+                        <span class="text-white fs_24 text-right">grupoccima.com</span>
                     </a>
                 </div>
             </div>

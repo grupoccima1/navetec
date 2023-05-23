@@ -51,6 +51,13 @@ html {
 .interlineado-24{
     line-height: 1.5rem;
 }
+
+@media(min-width:78px){
+    .pt-64px
+    {
+        padding-top: 0rem;
+    }
+}
 /* Posiciones */
 .position-relative{
     position: relative;
@@ -187,6 +194,18 @@ p{
 }
 
 
+@media(max-width: 768px){
+    .fs_46{
+        font-size: 2rem;
+    }
+    .fs_52{
+        font-size: 2.25rem;
+    }
+    .fs_64{
+        font-size: 3rem;
+    }
+        
+}
 /* background */
 
 .bg-blue-50{
@@ -220,6 +239,24 @@ p{
     height: 100vh;
     background-image: url("../img/bg/indicadores.jpg");
 }
+@media(max-width: 768px){
+    .bg-indicadores{
+        height: 100vh;
+        background-image: url("../img/bg/indicadores_movil.jpg");
+    }   
+}
+
+.ml-5rem{
+    margin-left: 5rem;
+}
+
+@media(max-width:768px)
+{
+    .ml-5rem{
+        margin-left: 0rem;
+    }    
+}
+
 /* Border */
 .border-blue-top{
     border-top: 10px solid #1F49B6;
@@ -233,6 +270,16 @@ p{
 }
 .border-count-right{
     border-right: 1px solid #fff;
+}
+
+@media (max-width:768px){
+    .border-count-left{
+        border-left: none ;
+    }
+    .border-count-right{
+        border-right: none;
+    }
+    
 }
 
 .hr-white{
@@ -252,12 +299,19 @@ p{
     border: 1px solid #fff;
 }
 .hr-footer{
-    border: 2px solid #002856;
+    border: 2px solid #1f49b7;
 }
 .z-99{
     z-index: 99;
 }
+
+.icon-menu{
+    width: 1.25rem;
+}
 /* header */
+.logo-navetec{
+    width: 5rem;
+}
 
 .hero{
     background-image: url(../img/bg/portada.jpg);
@@ -269,12 +323,22 @@ p{
 
 .intencion{
     border: 1px solid #c1c1c1;
-    padding: 9px 30px;
+    padding: 9px 10px;
     margin-right: 20px;
     text-transform: uppercase;
     color: #c1c1c1;
 }
 
+@media (min-width: 768px){
+    .intencion{
+        border: 1px solid #c1c1c1;
+        padding: 9px 20px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        color: #c1c1c1;
+    }
+        
+}
 .formulario .radio label,
 .formulario .checkbox label {
   display: inline-block;
@@ -344,7 +408,7 @@ p{
 }
 
 .wildcard{
-    top: -15rem;
+    top: -14rem;
     width: 100%;
     z-index: -1;
 }
@@ -374,13 +438,24 @@ p{
     top: -9rem;
     left: 7rem;
 }
-
+.ptfooter-10{
+    padding-top: 5rem;
+}
 .footer-bg{
     background-image: url("../img/bg/footer_web.jpg");
     background-position: center center;
     background-size: cover;
     height: 50vh;
 }
+@media(max-width: 768px){
+    .footer-bg{
+        background-image: url("../img/bg/footer_movil.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
 .footer-list{
     list-style: none;
 }
