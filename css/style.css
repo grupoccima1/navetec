@@ -47,14 +47,20 @@ html {
 {
     padding-top: 5rem;
 }
+.pt-7rem{
+    padding-top: 7rem;
+}
 
 .interlineado-24{
     line-height: 1.5rem;
 }
 
-@media(min-width:78px){
+@media(min-width:786px){
     .pt-64px
     {
+        padding-top: 0rem;
+    }
+    .pt-7rem{
         padding-top: 0rem;
     }
 }
@@ -139,6 +145,9 @@ p{
 }
 .text-blue-100{
     color: #1F49B6;
+}
+.text-blue-200{
+    color: #002856;
 }
 .text-blue-900{
     color: #002856;
@@ -233,11 +242,19 @@ p{
 .bg-blue-trasparent{
     height: 100%;
     background-color: #002856a8;
+    background-size: cover;
+    background-position: center center;
 }
-
+.bg-gradient-blue__50{
+    background: rgb(16,37,43);
+    background: linear-gradient(90deg, #002856  0%, rgba(51,80,203,1) 47%, #002856 100%);
+}
 .bg-indicadores{
-    height: 100vh;
+    height: 50vh;
     background-image: url("../img/bg/indicadores.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media(max-width: 768px){
     .bg-indicadores{
@@ -245,18 +262,15 @@ p{
         background-image: url("../img/bg/indicadores_movil.jpg");
     }   
 }
-
 .ml-5rem{
     margin-left: 5rem;
 }
-
 @media(max-width:768px)
 {
     .ml-5rem{
         margin-left: 0rem;
     }    
 }
-
 /* Border */
 .border-blue-top{
     border-top: 10px solid #1F49B6;
@@ -271,7 +285,6 @@ p{
 .border-count-right{
     border-right: 1px solid #fff;
 }
-
 @media (max-width:768px){
     .border-count-left{
         border-left: none ;
@@ -279,9 +292,7 @@ p{
     .border-count-right{
         border-right: none;
     }
-    
 }
-
 .hr-white{
     border: 2px solid #fff;
     text-align: center;
