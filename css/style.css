@@ -303,8 +303,8 @@ p{
         background-image:none;
     }
     .bg-footer-rs{
-        background-image:url("../img/bg/footer_movil_2.svg") ;
-        background-size: cover;
+        background-color: #1F49B6;
+        background-size: cover; 
         background-position: center center;
         background-repeat: no-repeat;
     }
