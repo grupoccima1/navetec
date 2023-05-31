@@ -1,23 +1,41 @@
-let valueDisplays = document.querySelectorAll(".numero");
-let interval= 3000; 
+addEventListener ('DOMContentLoaded', () => {
+  const contadores = document.querySelectorAll('.contador_cantidad')
+  const velocidad = 1000
 
-var win = $(window);
-win.scroll(contador);
+  const animarContadores = () => {
+    for (const contador of contadores) {
+      const actualizar_contador = () => {
+        let cantidad_maxima = +contador.dataset.cantidadTotal, 
+          valor_actual = +contador.innerText, 
+          incremento = cantidad_maxima / velocidad
+          if (valor_actual < cantidad_maxima) {
+            contador.innerText = Math.ceil(valor_actual + incremento)
+            setTimeout(actualizar_contador, 5)
+          } else {
+            contador.innerText = cantidad_maxima
+          }
+      }
+      actualizar_contador()
+    }
+  }
+  
+  const mostrarContadores = elementos => {
+    elementos.forEach(elemento => {
+      if (elemento.isIntersecting) {
+        elemento.target.classList.add('animar')
+        elemento.target.classList.remove('ocultar')
+        setTimeout(animarContadores, 300)
+      }
 
-function contador() {
-    valueDisplays.forEach(valueDisplays => {
-        let startValue = 0; 
-        let endValue = parseInt(valueDisplays.getAttribute("data-val"));
-        console.log(endValue);
-        let duration = Math.floor(interval / endValue);
-        let couter = setInterval(function () {
-          startValue += 1; 
-          valueDisplays.textContent = startValue;
-          if (startValue == endValue){
-            clearInterval(couter);
-          }  
-        },duration);
-        
-    });
-}
+    })
+  }
 
+  const observer = new IntersectionObserver(mostrarContadores,{
+    threshold: 0.75 // 
+  })
+
+  const elementosHtml = document.querySelectorAll('.contador')
+  elementosHtml.forEach(elementoHtml => {
+    observer.observe(elementoHtml)
+  })
+})

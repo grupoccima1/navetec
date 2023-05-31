@@ -80,6 +80,9 @@ html {
 .w100{
     width: 100%;
 }
+.w90{
+    width: 90%;
+}
 .h100{
     height: 100%;
 }
@@ -218,6 +221,11 @@ p{
 .letter-space-8px{
     letter-spacing: .5rem;
 }
+.letter-space-4px{
+    letter-spacing: .25rem;
+}
+
+
 
 
 @media(max-width: 768px){
@@ -527,6 +535,7 @@ p{
     width: 2rem;
     margin-bottom: 1.5rem;
     margin-right: 0.625rem;
+    padding-top: 1rem;
 }
 .count-box{
     display: flex;
@@ -589,3 +598,65 @@ p{
 }
 
 
+.pt-btn_invetir{
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+}
+
+.container-boton {
+    background-color: #1b8335;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+    margin: 1rem;
+}
+
+.container-boton:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton-telegram {
+    width: 2rem !important;
+    transition: ease 1s;
+}
+
+
+.contador{
+ 
+}
+
+.contador_cantidad{
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ocultar{
+    opacity: 0;
+}
+.animar{
+    animation: aparecer 1.3s;
+}
+
+
+@media(min-width:996px){
+    .hr-extraordinario{
+        margin: 0 4rem;
+    }
+
+}
