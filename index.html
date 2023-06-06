@@ -26,7 +26,7 @@
 <body style="overflow-x: hidden;">
     <!--------------------- Aqui comienza nav  -------------------->
     <div id="navegacion">
-        <nav class="navbar navbar-expand-sm fixed-top bg-light p-0">
+        <nav class="navbar navbar-expand-sm fixed-top bg-light p-0 z-1032">
             <!-- Brand -->
             <div class="container-fluid p-0">
                 <div class="d-flex w100 justify-content-between">
@@ -221,10 +221,10 @@
             </div>
         </div>
     </div>
-    <div class="container">
+
+    <div class="container d-none d-xl-block">
         <!-- Fin de inversiones en Queretaro -->
         <div class="my-5 py-5">
-
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -301,6 +301,88 @@
             </div>
         </div>
     </div>
+
+    <div class="container d-block d-xl-none">
+        <!-- Fin de inversiones en Queretaro -->
+        <div class="my-5 py-5">
+            <div id="carouselMapaIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselMapaIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselMapaIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselMapaIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center gap-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center" >
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#sur57_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/sur_57.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center py-3 py-sm-0 py-md-0">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#calamanda_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/calamanda.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center py-sm-3 py-md-0">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#santa_rosa_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/santa_rosa.jpg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center" >
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#celta_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/celta.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center py-3 py-sm-0 py-md-0">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#gammaii_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/gamma_ll.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center py-sm-3 py-md-0">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#pedro_escobedo_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/pedro_escobedo.jpg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center ">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#gamma_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/gamma_l.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center py-3 py-sm-0 py-md-0 ">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#beta_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/beta.jpg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-4 text-center py-sm-3 py-md-0 ">
+                                <button type="" class="btn-modal" data-toggle="modal" data-target="#aeropuerto_mapa">
+                                    <img class="w100 px-3 " src="img/content/mapa/aeropuerto.jpg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselMapaIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselMapaIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
     <div class="position-relative">
         <div class="position-absolute wildcard">
             <div class="bg-blue-900 w100" style="height: 15rem;">
@@ -733,8 +815,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="beta" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
@@ -769,7 +849,6 @@
             </div>
         </div>
     </div>
-
     <!-- Modal -->
     <div class="modal fade" id="pedro_escobedo" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
         aria-hidden="true">
@@ -816,14 +895,157 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <iframe class="w100 video_height"  src="https://www.youtube.com/embed/kZhQbB2-23c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <video id="videosur" width="100%" height="auto" controls>
+                        <source src="videos/Sur_57.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal movil  -->
+    <!-- Modal de Sur 57 -->
+    <div class="modal fade" id="sur57_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/sur_57_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Santa Rosa -->
+    <div class="modal fade" id="santa_rosa_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/santa_rosa_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Pedro_Escobedo -->
+    <div class="modal fade" id="pedro_escobedo_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/pedro_escobedo_ficha.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal gamma -->
+    <div class="modal fade" id="gamma_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/gamma_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal gamma II-->
+    <div class="modal fade" id="gammaii_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/gamma_ii_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Beta -->
+    <div class="modal fade" id="beta_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/beta_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Celta -->
+    <div class="modal fade" id="celta_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/celta_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Calamanda -->
+    <div class="modal fade" id="calamanda_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/calamanda_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Aeropuerto -->
+    <div class="modal fade" id="aeropuerto_mapa" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered navetec__modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w100" src="img/content/mapa/aeropuerto_ficha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="container-boton">
-        <a href="https://api.whatsapp.com/send?phone=524422912223&text=Hola%20me%20gustaria%20recibir%20m%C3%A1s%20información%20de%20Navetec" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=524425982326&text=Hola%20me%20gustaria%20recibir%20m%C3%A1s%20información%20de%20Navetec" target="_blank">
             <img class="boton-telegram" src="img/wa.png" alt="">
         </a>
     </div>
